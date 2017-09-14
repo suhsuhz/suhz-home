@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+	width: 96%;
+	border: 1px solid white;
+}
+
+header,footer {
+	padding: 1em;
+	color: black;
+	background-color: #fcf3d5;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+	height:400px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	margin-left: 170px;
+	border-left: 1px solid gray;
+	padding: 1em;
+	overflow: hidden;
+
+}
+
+#wo {
+	display: none;
+}
+ a {text-decoration:none;color:black}
+ a:hover {text-decoration:underline;color:red}
+ body {font-size:9pt}
+</style>
+
+<script>
+function view(pp)
+{
+	document.getElementById(pp).style.display="inline";
+}
+function hid(pp)
+{
+	document.getElementById(pp).style.display="none";
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <a href="../Index.html"><h1>CHEESE</h1></a>
+</header>
+
+<nav>
+<ul>
+  <li><a href="Notice.html">NOTICE</a></li>
+  <li><a href="#" onmouseover=view("wo") onmouseout=hid("wo")>Woman</a></li>
+	<li id=wo onmouseover=view("wo") onmouseout=hid("wo")>
+      <ul>
+          <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Top.html">Top</a></li>
+          <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Bottom.html">Bottom</a></li>
+      </ul>
+	</li>
+  <li><a href="#">QnA</a></li>
+</ul>
+</nav>
+
+<article>
+
+</article>
+
+<footer>only use HTML, css, javascript</footer>
+
+</div>
+
+</body>
+</html>
