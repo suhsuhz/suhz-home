@@ -14,6 +14,7 @@ header,footer {
 	clear: left;
 	text-align: center;
 }
+
 table,tr,td {
   border-color: #fcf3d5;
   border-spacing: 0px;
@@ -45,6 +46,10 @@ article {
  a {text-decoration:none;color:#78766e}
  a:hover {text-decoration:underline;color:#917649}
  body {font-size:9pt}
+
+#qq{
+  color: blue
+}
 </style>
 
 <script>
@@ -64,14 +69,14 @@ function hid(pp)
 <div class="container">
 
 <header>
-  <a href="../suhz-home/Index.html">
+  <a href="../Index.html">
     <h1>CHEESE clothing store</h1>
   </a>
 </header>
 
 <nav>
 <ul>
-  <li><a href="Notice.html">NOTICE</a></li>
+  <li><a href="../Notice.html">NOTICE</a></li>
   <li><a href="#" onmouseover=view("wo") onmouseout=hid("wo")>Woman</a></li>
 	<li id=wo onmouseover=view("wo") onmouseout=hid("wo")>
       <ul>
@@ -79,8 +84,18 @@ function hid(pp)
           <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Bottom.html">Bottom</a></li>
       </ul>
 	</li>
-  <li><a href="#">QnA</a></li>
+  <li><a href="../suhz-home/QnA/QnA.html">QnA</a></li>
 </ul>
 </nav>
 
 <article>
+  <h2>
+    This is test page. You can't submit your QnA.<br>
+    Please click <a href="../Index.html" id=qq>this</a>
+  <h2>
+</article>
+
+<footer>only use HTML, css, javascript</footer>
+</div>
+</body>
+</html>

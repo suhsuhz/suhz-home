@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+	width: 96%;
+	border: 1px solid white;
+}
+
+header,footer {
+	padding: 1em;
+	color: #78766e;
+	background-color: #fcf3d5;
+	clear: left;
+	text-align: center;
+}
+
+table,tr,td {
+  border-color: #fcf3d5;
+  border-spacing: 0px;
+}
+
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+	height:400px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	margin-left: 170px;
+	border-left: 2px solid #fcf3d5;
+	padding: 1em;
+	overflow: hidden;
+}
+
+#wo {
+	display: none;
+}
+ a {text-decoration:none;color:#78766e}
+ a:hover {text-decoration:underline;color:#917649}
+ body {font-size:9pt}
+</style>
+
+<script>
+function view(pp)
+{
+	document.getElementById(pp).style.display="inline";
+}
+function hid(pp)
+{
+	document.getElementById(pp).style.display="none";
+}
+function chk(pp)
+{
+  if(pp.name.value=="")
+  {
+  alert("please check your name");
+  pp.name.focus();
+  return false;
+  }
+    else if(pp.pwd.value=="")
+    {
+      alert("please check your pwd");
+      pp.pwd.focus();
+      return false;
+    }
+      else if(pp.title.value=="")
+      {
+        alert("please check your title");
+        pp.title.focus();
+        return false;
+      }
+        else if(pp.content.value=="")
+        {
+          alert("please check your content");
+          pp.content.focus();
+          return false;
+        }
+          else
+            return true;
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <a href="../Index.html">
+    <h1>CHEESE clothing store</h1>
+  </a>
+</header>
+
+<nav>
+<ul>
+  <li><a href="../Notice.html">NOTICE</a></li>
+  <li><a href="#" onmouseover=view("wo") onmouseout=hid("wo")>Woman</a></li>
+	<li id=wo onmouseover=view("wo") onmouseout=hid("wo")>
+      <ul>
+          <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Top.html">Top</a></li>
+          <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Bottom.html">Bottom</a></li>
+      </ul>
+	</li>
+  <li><a href="../suhz-home/QnA/QnA.html">QnA</a></li>
+</ul>
+</nav>
+
+<article>
+  <form method="post" action="QnA_Test.html" onsubmit="return chk(this)">
+	<table align=center width=50% height=400>
+    <title>QnA</title>
+    <tr>
+      <td colspan="2" align=center padding=10>
+        <input type=text size=10 name=name placeholder="NAME">&nbsp;&nbsp;
+        <input type=text size=10 name=pwd placeholder="password">
+      </td>
+    </tr>
+    <tr>
+      <td width=20% align=center>title</td>
+      <td><input type=text size=40 name=title></td>
+    </tr>
+    <tr>
+      <td width=20% align=center>content</td>
+      <td><textarea rows=15 cols=40 name=content></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align=center><input type=submit value=submit></td>
+    </tr>
+    </tr>
+  </table>
+</form>
+</article>
+
+<footer>only use HTML, css, javascript</footer>
+</div>
+</body>
+</html>
