@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+	width: 96%;
+	border: 1px solid white;
+}
+
+header,footer {
+	padding: 1em;
+	color: #78766e;
+	background-color: #fcf3d5;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+	height:400px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	margin-left: 170px;
+	border-left: 2px solid #fcf3d5;
+	padding: 1em;
+	overflow: hidden;
+}
+
+#wo {
+	display: none;
+}
+#real{
+  color: #eea71a;
+}
+
+ a {text-decoration:none;color:#78766e}
+ a:hover {text-decoration:underline;color:#917649}
+ body {font-size:9pt}
+</style>
+
+<script>
+function view(pp)
+{
+	document.getElementById(pp).style.display="inline";
+}
+function hid(pp)
+{
+	document.getElementById(pp).style.display="none";
+}
+function view_content()
+{
+  //alert("");
+  location="/Woman/Top1.html";
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <a href="../suhz-home/Index.html">
+    <h1>CHEESE clothing store</h1>
+  </a>
+</header>
+
+<nav>
+<ul>
+  <li><a href="../Notice.html">NOTICE</a></li>
+  <li><a href="#" onmouseover=view("wo") onmouseout=hid("wo")>Woman</a></li>
+	<li id=wo onmouseover=view("wo") onmouseout=hid("wo")>
+      <ul>
+          <li>&nbsp;&nbsp;<a href="../Woman/W-Top.html">Top</a></li>
+          <li>&nbsp;&nbsp;<a href="../Woman/W-Bottom.html">Bottom</a></li>
+      </ul>
+	</li>
+  <li><a href="../QnA/QnA.html">QnA</a></li>
+</ul>
+</nav>
+
+<article>
+  <table width=100% height=600>
+    <tr>
+      <td>
+        <table width=30% onclick="view_content()" style="cursor:pointer;">
+          <tr>
+            <td>
+              <img width=200 height=200 src="https://user-images.githubusercontent.com/31497805/30437661-18d5ce52-99aa-11e7-8543-9aef47e8943c.jpg">
+            </td>
+          </tr>
+          <tr>
+            <td align=center id=real>Click this</td>
+          </tr>
+      </table>
+    </td>
+    <td>
+      <table width=30%>
+        <tr>
+          <td>
+            <img width=200 height=200 src="https://user-images.githubusercontent.com/31497805/30437660-17c69500-99aa-11e7-9946-160906f90bbc.jpg">
+          </td>
+        </tr>
+        <tr>
+          <td align=center>sample</td>
+        </tr>
+    </table>
+  </td>
+  <td>
+    <table width=30%>
+      <tr>
+        <td>
+          <img width=200 height=200 src="https://user-images.githubusercontent.com/31497805/30437654-177dcca8-99aa-11e7-89b9-cffb0d89bd20.jpg">
+        </td>
+      </tr>
+      <tr>
+        <td align=center>sample</td>
+      </tr>
+  </table>
+</td>
+    <tr>
+      <td>
+        <table width=30%>
+          <tr>
+            <td>
+              <img width=200 height=200 src="https://user-images.githubusercontent.com/31497805/30437659-17a4fe9a-99aa-11e7-93c6-528f756de2a7.jpg">
+            </td>
+          </tr>
+          <tr>
+            <td align=center>sample</td>
+          </tr>
+      </table>
+    </td>
+    <tr>
+  </table>
+</article>
+
+<footer>only use HTML, css, javascript</footer>
+</div>
+</body>
+</html>
