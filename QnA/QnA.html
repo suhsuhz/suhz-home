@@ -71,18 +71,12 @@ function chk(pp)
       pp.pwd.focus();
       return false;
     }
-      else if(pp.title.value=="")
+      else if(pp.content.value=="")
       {
-        alert("please check your title");
-        pp.title.focus();
+        alert("please check your content");
+        pp.content.focus();
         return false;
       }
-        else if(pp.content.value=="")
-        {
-          alert("please check your content");
-          pp.content.focus();
-          return false;
-        }
           else
             return true;
 }
