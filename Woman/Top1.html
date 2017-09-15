@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+	width: 96%;
+	border: 1px solid white;
+}
+
+header,footer {
+	padding: 1em;
+	color: #78766e;
+	background-color: #fcf3d5;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+	height:400px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+article {
+	margin-left: 170px;
+	border-left: 2px solid #fcf3d5;
+	padding: 1em;
+	overflow: hidden;
+}
+
+#wo {
+	display: none;
+}
+ a {text-decoration:none;color:#78766e}
+ a:hover {text-decoration:underline;color:#917649}
+ body {font-size:9pt}
+</style>
+
+<script>
+function view(pp)
+{
+	document.getElementById(pp).style.display="inline";
+}
+function hid(pp)
+{
+	document.getElementById(pp).style.display="none";
+}
+function jumun(ppp)
+{
+  switch(ppp.selectedIndex)
+  {
+    case 0:
+      document.pkc.jung.length=1;
+      document.pkc.jung.options[0].text="size";
+      break;
+    case 1:
+      document.pkc.jung.length=2;
+      document.pkc.jung.options[0].text="S";
+      document.pkc.jung.options[1].text="L";
+      break;
+
+    case 2:
+      document.pkc.jung.length=3;
+      document.pkc.jung.options[0].text="S";
+      document.pkc.jung.options[1].text="M";
+      document.pkc.jung.options[2].text="L";
+      break;
+
+    case 3:
+      document.pkc.jung.length=1;
+      document.pkc.jung.options[0].text="S";
+      break;
+  }
+}
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+  <a href="../index.html">
+    <h1>CHEESE clothing store</h1>
+  </a>
+</header>
+
+<nav>
+<ul>
+  <li><a href="../Notice.html">NOTICE</a></li>
+  <li><a href="#" onmouseover=view("wo") onmouseout=hid("wo")>Woman</a></li>
+	<li id=wo onmouseover=view("wo") onmouseout=hid("wo")>
+      <ul>
+          <li>&nbsp;&nbsp;<a href="../Woman/W-Top.html">Top</a></li>
+          <li>&nbsp;&nbsp;<a href="../Woman/W-Bottom.html">Bottom</a></li>
+      </ul>
+	</li>
+  <li><a href="../QnA/QnA.html">QnA</a></li>
+</ul>
+</nav>
+
+<article>
+  <table width=70% height=400 align=center>
+    <tr>
+      <td align=center><img width=300 height=300 src="https://user-images.githubusercontent.com/31497805/30437661-18d5ce52-99aa-11e7-8543-9aef47e8943c.jpg"></td>
+      <td>
+        <table width=150>
+          <tr>
+            <td height=40>
+              <form name=pkc>
+                <select name=dae onchange=jumun(this)>
+                  <option value=0>color</option>
+                  <option value=1>red</option>
+                  <option value=2>ivory</option>
+                  <option value=3>green</option>
+                </select>
+                <select name=jung>
+
+                </select>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td align=right><a href="../Woman/W-Test.html">PAYMENT</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=2 align=center>
+        shirt<br>
+        color : <font color=red>red</font>, <font color=#daae5e>ivory</font>, <font color=green>green</font><br>
+        size : L, M, S
+      </td>
+    </tr>
+  </table>
+
+</article>
+
+<footer>only use HTML, css, javascript</footer>
+</div>
+</body>
+</html>

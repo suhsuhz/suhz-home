@@ -14,6 +14,7 @@ header,footer {
 	clear: left;
 	text-align: center;
 }
+
 table,tr,td {
   border-color: #fcf3d5;
   border-spacing: 0px;
@@ -43,8 +44,12 @@ article {
 	display: none;
 }
  a {text-decoration:none;color:#78766e}
- a:hover {text-decoration:underline;color:}
+ a:hover {text-decoration:underline;color:#917649}
  body {font-size:9pt}
+
+#qq{
+  color: blue
+}
 </style>
 
 <script>
@@ -64,43 +69,30 @@ function hid(pp)
 <div class="container">
 
 <header>
-  <a href="../suhz-home/index.html">
+  <a href="../index.html">
     <h1>CHEESE clothing store</h1>
   </a>
 </header>
 
 <nav>
 <ul>
-  <li><a href="Notice.html">NOTICE</a></li>
+  <li><a href="../Notice.html">NOTICE</a></li>
   <li><a href="#" onmouseover=view("wo") onmouseout=hid("wo")>Woman</a></li>
 	<li id=wo onmouseover=view("wo") onmouseout=hid("wo")>
       <ul>
-          <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Top.html">Top</a></li>
-          <li>&nbsp;&nbsp;<a href="../suhz-home/Woman/W-Bottom.html">Bottom</a></li>
+          <li>&nbsp;&nbsp;<a href="../Woman/W-Top.html">Top</a></li>
+          <li>&nbsp;&nbsp;<a href="../Woman/W-Bottom.html">Bottom</a></li>
       </ul>
 	</li>
-  <li><a href="../suhz-home/QnA/QnA.html">QnA</a></li>
+  <li><a href="../QnA/QnA.html">QnA</a></li>
 </ul>
 </nav>
 
 <article>
-	<table align=center width=80% height=500 border=1>
-     <tr>
-       <td width=70% height=10% align=center><h3>NOTICE</h3></td>
-       <td align=center>administrator</td>
-     </tr>
-     <tr>
-       <td colspan=2>
-				 <img width=800 height=200 src="https://user-images.githubusercontent.com/31497805/30477394-f1f3f248-9a47-11e7-8447-58078d77a1ca.jpg">
-       </td>
-		 <tr>
-			 <td align=center>
-			 		<h4>CHEESE clothing store</h4><br>
-					한글테스트
-			 </td>
-		 </tr>
-     </tr>
-  </table>
+  <h2>
+    This is test page. You can't submit your Payment.<br>
+    Please click <a href="../index.html" id=qq>this</a>
+  <h2>
 </article>
 
 <footer>only use HTML, css, javascript</footer>
